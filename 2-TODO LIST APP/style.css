@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 0;
+}
+
+#app-container {
+    width: 420px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem 1rem 3rem;
+    
+}
+
+#row {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#input-task {
+    background-color: lightgray;
+    border: none;
+    width: 300px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ff5945;
+    border: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+    border: 1px solid lightgray;
+    background-color: gray;
+    padding: 6px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.circle {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.circle.active {
+    background-image: url(images/tick.png);
+    background-size: cover;
+}
+
+.delBtn {
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.crossImg {
+    width: 20px;
+}
+
+li p {
+    cursor: pointer;
+}
+
+.delBtn:hover {
+    border: 1px solid white;
+}
+
+.checked {
+    text-decoration: 2px line-through;
+}
+
+
+@media (max-width:490px) {
+    #app-container {
+        width: 350px;
+        
+    }
+    #input-task {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:400px) {
+    body{
+        padding: 0;
+    }
+    #app-container {
+        width: 100vw;
+        padding: 8px;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+}
