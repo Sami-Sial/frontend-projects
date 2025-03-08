@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #548687;
+    text-align: center;
+    padding: 10px;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#game{
+    width: 380px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 6rem;
+    width: 6rem;
+    font-size: 3rem;
+    border: none;
+    border-radius: 1rem;
+    color: #b0413e;
+    background-color: #ffffc7;
+}
+
+#reset-btn{
+    background-color: #191913;
+    color: white;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.msg-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#new-btn{
+    background-color: #191913;
+    color: white;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+#msg{
+    color: #ffffc7;
+    font-size: 3rem;
+}
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    #msg {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:350PX) {
+    #game {
+        width: 300px;
+    }
+    .box {
+        width: 4.5rem;
+        height: 4.5rem;
+    }    
+}
