@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+
+body{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4e4ba;
+}
+
+.container{
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    height: 345px;
+    width: 320px;
+}
+
+.form{
+    margin: 0.5rem 0 1rem 0;
+    font-weight: bold;
+}
+
+form button, select, input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+input{
+    font-size: 1.2rem;
+    margin-top: 5px;
+    border:1px solid lightgray;
+    height: 2rem;
+    padding-left: 0.5rem;
+}
+
+.from p {
+    font-size: 1.2rem;
+}
+
+.to p {
+    font-size: 1.2rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i{
+    font-size: 1.5rem;
+    margin-top: 1.3rem;
+}
+
+.select-container img{
+    max-width: 2.5rem;
+}
+
+.select-container{
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+}
+
+.select-container select{
+    width: auto;
+    font-size: 1.1rem;
+}
+
+.msg{
+    font-size: 1.5rem;
+    margin: 2rem 0 2rem 0;
+}
+
+form button{
+    height: 3rem;
+    background-color: #af4d98;
+    color: #fff;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:415px){
+    h1 {
+        text-align: center;
+    }
+    .container{
+        width: 100vw;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    body {
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .dropdown {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .from, .to {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .select-container {
+        width: 70%;
+        margin-left: auto;
+    }
+    .msg {
+        font-size: 1.4rem;
+    }
+    .dropdown i {
+        transform: rotate(90deg);
+        margin-top: 0;
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width:300px){
+    .from p {
+        font-size: 1rem;
+    }
+    .to p {
+        font-size: 1rem;
+    }
+    .msg {
+        font-size: 1.3rem;
+    }
+    .dropdown i {
+        margin-left: 4rem;
+    }
+}
+
+
+
+
